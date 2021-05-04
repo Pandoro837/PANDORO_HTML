@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            table{
+                text-align: center; 
+                border: 1px solid black ; 
+                border-collapse: collapse;
+                }
+            thead{background-color: gray ; color:white;}
+            tbody{background-color: rgb(182, 182, 182) ;}
+            td{
+                background-color: white ; 
+                
+            }
+        </style>
+        <title>html5</title>
+    </head>
+
+    <body>
+
+        <p>목차</p>
+        <ol>
+            <li><a href="ex01.html" target="_blank">h1~h6 태그</a></li>            
+            <li><a href="./ex02.html" target="_blank">p, br, blockquote, q, strong, b, em, i 태그</a></li>
+            <li><a href="./ex03.html" target="_blank">ol, ul, li 태그</a></li>
+            <li><a href="./ex04.html" target="_blank">img, a 태그</a></li>
+            <li><a href="./ex05.html" target="_blank">table 태그</a></li>
+            <li><a href="./ex06.html" target="_blank">colspan, rowspan 태그</a></li>
+            <li><a href="./ex07.html" target="_blank">thead, tbody, tfoot 태그</a></li>
+            <li><a href="./ex08.html" target="_blank">테이블 종합 연습문제</a></li>
+        </ol>
+        
+        <hr>
+
+        <h1>html 태그</h1>
+        <h2>8. 테이블 종합 연습문제</h2>
+
+        <table border="1">
+
+            <colgroup>
+                <col style="width: 15%;">
+                <col style="width: 15%;">
+                <col style="width: 25%;">
+                <col style="width: 30%;">
+                <col style="width: 25%;">
+            </colgroup>
+
+            <caption>모집분야</caption>
+        
+            <thead>
+                <tr>
+                    <th colspan="2">모집직군</th>
+                    <th>모집전공</th>
+                    <th>비고</th>
+                    <th>근무지</th>
+                </tr>    
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th colspan="2">생산기술직</th>
+                    <td>화학공학</td>
+                    <td rowspan="3">전공 자격증 우대</td>
+                    <td rowspan="5">충남 서산</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">생산지원직</th>
+                    <th>공무</th>
+                    <td>기계, 전기</td>
+                </tr>
+                <tr>
+                    <th>안전환경</th>
+                    <td>안전, 환경</td>
+                </tr>
+                <tr>
+                    <th colspan="2">연구 개발직</th>
+                    <td>화학, 화학공학</td>
+                    <td>석사</td>
+                </tr>
+                <tr>
+                    <th colspan="2">경영지원직</th>
+                    <td>상경계열</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th colspan="2">영업마케팅직</th>
+                    <td>상경계열</td>
+                    <td></td>
+                    <td>서울 중구   </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </body>
+
+</html>

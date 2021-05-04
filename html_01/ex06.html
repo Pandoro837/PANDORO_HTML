@@ -2,9 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <style>
-            table{text-align: center;}
-        </style>
+        <style>table{text-align: center;}</style>
         <title>html5</title>
     </head>
 
@@ -17,6 +15,8 @@
             <li><a href="./ex04.html" target="_blank">img, a 태그</a></li>
             <li><a href="./ex05.html" target="_blank">table 태그</a></li>
             <li><a href="./ex06.html" target="_blank">colspan, rowspan 태그</a></li>
+            <li><a href="./ex07.html" target="_blank">thead, tbody, tfoot 태그</a></li>
+            <li><a href="./ex08.html" target="_blank">테이블 종합 연습문제</a></li>
         </ol>
         
         <hr>
@@ -25,56 +25,63 @@
         <h2>6. 테이블 합치기 태그</h2>
 
         <p>가로합치기
-        <table border="1">
-            <tr>
-                <td colspan="3">1,1</td>
-            </tr>
-            <tr>
-                <td>2,1</td>
-                <td colspan="2">2,2</td>
-             </tr>               
-            <tr>
-                <td colspan="2">3,1</td>
-                <td>3,3</td>
-            </tr>
-        </table>
+
+            <table border="1">
+                <tr>
+                    <td colspan="3">1,1</td>
+                </tr>
+                <tr>
+                    <td>2,1</td>
+                    <td colspan="2">2,2</td>
+                </tr>               
+                <tr>
+                    <td colspan="2">3,1</td>
+                    <td>3,3</td>
+                </tr>
+            </table>
+
         </p>
 
         <p>세로합치기
-        <table border="1">
-            <tr>
-                <td>1,1</td>
-                <td>1,2</td>
-                <td rowspan="2">1,3</td>
-            </tr>
-            <tr>
-                <td rowspan="2">2,1</td>
-                <td>2,2</td>
-            </tr>
-            <tr>
-                <td>3,2</td>
-                <td>3,3</td>
-            </tr>
-        </table>
+        
+            <table border="1">
+                <tr>
+                    <td>1,1</td>
+                    <td>1,2</td>
+                    <td rowspan="2">1,3</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">2,1</td>
+                    <td>2,2</td>
+                </tr>
+                <tr>
+                    <td>3,2</td>
+                    <td>3,3</td>
+                </tr>
+            </table>
+
         </p>
 
         <p>가로세로합치기
-        <table border="1">
-            <tr>
-                <td>1,1</td>
-                <td>1,2</td>
-                <td>1,3</td>
-            </tr>
-            <tr>
-                <td rowspan="2">2,1</td>
-                <td colspan="2">2,2</td>
-            </tr>
-            <tr>
-                <td>3,2</td>
-                <td>3,3</td>
-            </tr>
-        </table>
+
+            <table border="1">
+                <tr>
+                    <td>1,1</td>
+                    <td>1,2</td>
+                    <td>1,3</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">2,1</td>
+                    <td colspan="2">2,2</td>
+                </tr>
+                <tr>
+                    <td>3,2</td>
+                    <td>3,3</td>
+                </tr>
+            </table>
+
         </p>
+        
     </body>
 
 </html>
