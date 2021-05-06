@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>회원가입 화면예제</title>
+        <style>
+    
+            input.box_1{
+                width: 150px;
+                padding: 5px;
+                margin: 5px 0 0 10px;
+            }
+
+            input.post{
+                width: 400px;
+            }
+
+            div{
+                padding-left: 48px;
+            }
+
+            form{
+                padding : 5px 0 0 24px;
+            }
+
+            select.sel-box{
+                width: 120px; 
+                height: 25px;
+            }    
+
+            textarea.probox{
+                margin-left: 5px;
+                width: 400px; 
+                height: 100px; 
+                resize: none;
+            }
+
+            label.pro{
+                vertical-align: top;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <form action="aaa.jsp" method="get">
+        
+            <label>아이디
+                <input class="box_1" type="text" name="uid" placeholder="아이디를 입력하세요">
+            </label>
+            
+            <hr>
+            
+            <label>패스워드
+                <input class="box_1" type="password" name="upw" placeholder="비밀번호를 입력하세요">
+            </label>
+            
+            <hr>
+            
+            <label>이름
+                <input class="box_1" type="text" name="uname" placeholder="이름을 입력하세요">
+            </label>
+            
+            <hr>
+            
+            <label>프로필 사진
+                <input type="file">
+            </label>
+            
+            <hr>
+            
+            <label>주소</label>
+            <input class="box_1" type="text" name="post_no" placeholder="우편번호를 입력하세요">
+            <input type="button" name="post_no" value="우편번호 찾기">
+            
+            <div>
+                <input class="post" type="text" name="post_detailed" placeholder="주소를 입력하세요">
+            </div>
+
+            <hr>
+
+            <label>이동통신사
+                <select class="sel-box" name="sel-tel">
+                    <option selected>선택해주세요</option>
+                    <option value="skt">SKT</option>
+                    <option value="kt">KT</option>
+                    <option value="lg">LGU+</option>
+                    <option value="etc">기타</option>
+                </select>
+            </label>
+            
+            <hr>
+
+            <label>나이</label>
+
+            <label>10대
+                <input type="radio" value="10s" name="age" checked="checked">
+            </label>
+
+            <label>20대
+                <input type="radio" value="20s" name="age">
+            </label>
+
+            <label>30대
+                <input type="radio" value="30s" name="age">
+            </label>
+
+            <label>40대
+                <input type="radio" value="40s" name="age">
+            </label>
+
+            <label>기타
+                <input type="radio" value="etc" name="age">
+            </label>
+
+            <hr>
+
+            <label>취미</label>
+
+            <label>독서
+                <input type="checkbox" value="book" name="hobby" checked="checked">
+            </label>
+
+            <label>음악
+                <input type="checkbox" value="music" name="hobby">
+            </label>
+
+            <label>여행
+                <input type="checkbox" value="trip" name="hobby">
+            </label>
+
+            <label>영화
+                <input type="checkbox" value="movie" name="hobby">
+            </label>
+
+            <label>코딩
+                <input type="checkbox" value="coding" name="hobby">
+            </label>
+
+            <label>기타
+                <input type="checkbox" value="etc" name="hobby">
+            </label>
+
+            <hr>
+            
+            <label class="pro" for="propile">자기소개</label>
+            <textarea id="propile" class="probox" placeholder="5줄 이상 작성해주세요"></textarea>
+            
+            <hr>
+
+            <center>
+            <button type="submit">등록</button><button type="reset" style="margin-left: 10px ;">초기화</button>
+            </center>
+        </form>
+
+    </body>
+
+</html>
