@@ -2,249 +2,158 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>최영교 이력서</title>
+        <title>회원가입 화면예제</title>
         <style>
-            table, th, td{
-                border: 3px solid black ; 
-                border-collapse: collapse;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                font-size: 18px;
+    
+            input.box_1{
+                width: 150px;
+                padding: 5px;
+                margin: 5px 0 0 10px;
             }
-            table{
-                width: 800px;
-                table-layout:fixed;
+
+            input.post{
+                width: 400px;
             }
-            td.description{
+
+            div{
+                padding-left: 48px;
+            }
+
+            form{
+                padding : 5px 0 0 24px;
+            }
+
+            select.sel-box{
+                width: 120px; 
+                height: 25px;
+            }    
+
+            textarea.probox{
+                margin-left: 5px;
+                width: 400px; 
+                height: 100px; 
+                resize: none;
+            }
+
+            label.pro{
                 vertical-align: top;
             }
-            th{
-                vertical-align: top;
-                font-weight: normal;
-            }
-            td.text1{
-                text-align: right;
-                letter-spacing: 5px;    
-            }
-            td.text2{
-                text-align: center;
-            }
-            
+
         </style>
     </head>
 
     <body>
-        <p>목차
-            <ol>
-                <li><a href="./hw04.html" target="_blank">이력서</a></li>
-                <li><a href="./hw05.html" target="_blank">자기소개서</a></li>
-                <li><a href="./hw06.html" target="_blank">경력기술서</a></li>
-            </ol>
+
+        <form action="aaa.jsp" method="get">
+        
+            <label>아이디
+                <input class="box_1" type="text" name="uid" placeholder="아이디를 입력하세요">
+            </label>
+            
             <hr>
-        </p>
+            
+            <label>패스워드
+                <input class="box_1" type="password" name="upw" placeholder="비밀번호를 입력하세요">
+            </label>
+            
+            <hr>
+            
+            <label>이름
+                <input class="box_1" type="text" name="uname" placeholder="이름을 입력하세요">
+            </label>
+            
+            <hr>
+            
+            <label>프로필 사진
+                <input type="file">
+            </label>
+            
+            <hr>
+            
+            <label>주소</label>
+            <input class="box_1" type="text" name="post_no" placeholder="우편번호를 입력하세요">
+            <input type="button" name="post_no" value="우편번호 찾기">
+            
+            <div>
+                <input class="post" type="text" name="post_detailed" placeholder="주소를 입력하세요">
+            </div>
 
-        <h1>이력서</h1>
+            <hr>
 
-        <table>
-            <colgroup>
-                <col style="width: 5%;">
-                <col style="width: 9%;">
-                <col style="width: 9%;">
-                <col style="width: 9%;">
-                <col style="width: 9%;">
-                <col style="width: 9%;">
-                <col style="width: 9%;">
-                <col style="width: 5%;">
-                <col style="width: 9%;">
-                <col style="width: 9%;">
-                <col style="width: 9%;">
-                <col style="width: 9%;">
-            </colgroup>
-            <tr>
-                <th rowspan="2" colspan="2">성명</th>
-                <th colspan="2">한글</th>
-                <td colspan="2"></td>
-                <th colspan="2">주민번호</th>
-                <td colspan="2"></td>
-                <td style="padding-left: 7px;" colspan="2" rowspan="4" class="description">사진</td>
-            </tr>
+            <label>이동통신사
+                <select class="sel-box" name="sel-tel">
+                    <option selected>선택해주세요</option>
+                    <option value="skt">SKT</option>
+                    <option value="kt">KT</option>
+                    <option value="lg">LGU+</option>
+                    <option value="etc">기타</option>
+                </select>
+            </label>
+            
+            <hr>
 
-            <tr>
-                <th colspan="2">한자</th>
-                <td colspan="2"></td>
-                <th colspan="2">생년월일</th>
-                <td colspan="2"></td>
-            </tr>
+            <label>나이</label>
 
-            <tr>
-                <th colspan="2">전화</th>
-                <th colspan="2">집전화</th>
-                <td colspan="2"></td>
-                <th colspan="2">휴대전화</th>
-                <td colspan="2"></td>
-            </tr>
+            <label>10대
+                <input type="radio" value="10s" name="age" checked="checked">
+            </label>
 
-            <tr>
-                <td style="height:100px ;" colspan="2" align="center"  class="description" >주소</td>
-                <td style="padding-left:7px ; " colspan="8" class="description">우편번호(&emsp;&emsp;)</td>
-            </tr>
+            <label>20대
+                <input type="radio" value="20s" name="age">
+            </label>
 
-            <tr>
-                <th colspan="2">종교</th>
-                <td colspan="2"></td>
-                <th>취미</th>
-                <td colspan="3"></td>
-                <th>특기</th>
-                <td colspan="3"></td>
-            </tr>
-            <tr>
-                <th rowspan="6" style="writing-mode: vertical-rl;">학력</th>
-                <th colspan="4">기간</th>
-                <th colspan="2">학교명</th>
-                <th colspan="2">전공</th>
-                <th colspan="2">졸업/졸업예정/중퇴</th>
-                <th>소재지</th>
-            </tr>
-            <tr>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">대학원</td>
-                <td colspan="2"></td>
-                <td colspan="2"></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">대학교</td>
-                <td colspan="2"></td>
-                <td colspan="2"></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">고등학교</td>
-                <td colspan="2"></td>
-                <td colspan="2"></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">중학교</td>
-                <td colspan="2"></td>
-                <td colspan="2"></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">초등학교</td>
-                <td colspan="2"></td>
-                <td colspan="2"></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th rowspan="5">경력사항</th>
-                <th colspan="4">기간</th>
-                <th colspan="3">직장명</th>
-                <th colspan="2">부서</th>
-                <th colspan="2">직위/직책</th>
-            </tr>
-            <tr>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="3"></td>
-                <td colspan="2"></td>
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="3"></td>
-                <td colspan="2"></td>
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="3"></td>
-                <td colspan="2"></td>
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="3"></td>
-                <td colspan="2"></td>
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <th rowspan="5">자격면허</th>
-                <th colspan="2">취득일자</th>
-                <th colspan="2">종류</th>
-                <th colspan="2">발급기관</th>
-                <th rowspan="5">외국어</th>
-                <th>구분</th>
-                <th>회화</th>
-                <th>독해</th>
-                <th>작문</th>
-            </tr>
-            <tr>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <th>영어</th>
-                <td class="text2">상 중 하</td>
-                <td class="text2">상 중 하</td>
-                <td class="text2">상 중 하</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <th>일본어</th>
-                <td class="text2">상 중 하</td>
-                <td class="text2">상 중 하</td>
-                <td class="text2">상 중 하</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <th>중국어</th>
-                <td class="text2">상 중 하</td>
-                <td class="text2">상 중 하</td>
-                <td class="text2">상 중 하</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <td colspan="2" class="text1">년 월 일</td>
-                <th>(&emsp;&emsp;)</th>
-                <td class="text2">상 중 하</td>
-                <td class="text2">상 중 하</td>
-                <td class="text2">상 중 하</td>
-            </tr>
-            <tr>
-                <th rowspan="2">병역</th>
-                <th colspan="3">실역구분</th>
-                <th>군별</th>
-                <th>병과</th>
-                <th>계급</th>
-                <th colspan="3">복무기간</th>
-                <th colspan="2">면제사유</th>
-            </tr>
-            <tr>
-                <td colspan="3"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td colspan="3" class="text1">년 월 일</td>
-                <td colspan="2"></td>
-            </tr>
-        </table>
-       
+            <label>30대
+                <input type="radio" value="30s" name="age">
+            </label>
+
+            <label>40대
+                <input type="radio" value="40s" name="age">
+            </label>
+
+            <label>기타
+                <input type="radio" value="etc" name="age">
+            </label>
+
+            <hr>
+
+            <label>취미</label>
+
+            <label>독서
+                <input type="checkbox" value="book" name="hobby" checked="checked">
+            </label>
+
+            <label>음악
+                <input type="checkbox" value="music" name="hobby">
+            </label>
+
+            <label>여행
+                <input type="checkbox" value="trip" name="hobby">
+            </label>
+
+            <label>영화
+                <input type="checkbox" value="movie" name="hobby">
+            </label>
+
+            <label>코딩
+                <input type="checkbox" value="coding" name="hobby">
+            </label>
+
+            <label>기타
+                <input type="checkbox" value="etc" name="hobby">
+            </label>
+
+            <hr>
+            
+            <label class="pro" for="propile">자기소개</label>
+            <textarea id="propile" class="probox" placeholder="5줄 이상 작성해주세요"></textarea>
+            
+            <hr>
+
+            <center>
+            <button type="submit">등록</button><button type="reset" style="margin-left: 10px ;">초기화</button>
+            </center>
+        </form>
+
     </body>
+
 </html>
