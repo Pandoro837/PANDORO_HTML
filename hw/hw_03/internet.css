@@ -18,6 +18,7 @@ h1{
     font-size: 30px;
     letter-spacing: 15px;
 }
+
 div{
     background : #D9D9D9;
 }
@@ -53,16 +54,17 @@ table a:link{
 table a:hover, a:active{
     color: #0000FF;
     text-decoration: underline;
-    
 }
 
 table>tbody>tr>td:nth-child(2){
     text-align: right;
 }
+
 table>tbody>tr>td:nth-child(2):before{
     content: "약";
     margin-right: 10px;
 }
+
 table>tbody>tr>td:nth-child(2):after{
     content: " (Mb/초)";
 }
