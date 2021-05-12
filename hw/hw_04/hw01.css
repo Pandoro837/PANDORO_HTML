@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+ol{
+    display: inline-block;
+    list-style-type: none;
+}
+ol>li{
+    float: left;
+    margin-right: 30px;
+}
+ol>li:after{
+    content: " >";
+}
+
 table{
     text-align: center;
     border-left: none;

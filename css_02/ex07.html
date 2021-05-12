@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+           
+            div{
+                background-color: red;
+                color: white;
+            }
+
+            div.bg_img{
+                background-image: url(./img/back_img01.jpg);
+                width: 1500px;
+                height: 1500px;
+                /* background-size: contain;*/
+
+                background-repeat: no-repeat; 
+                background-position: left center;
+                /* background-attachment: scroll; */
+                background-attachment: fixed;
+            }
+            
+            div.bg_img2{
+                width: 1500px;
+                height: 1500px;
+                background: #022250 url(./img/back_img01.jpg) no-repeat fixed center center;
+            }               /*백그라운드 컬러, 소스, 반복, 어태치먼트, 포지션 순서로 적용*/
+
+        </style>
+    </head>
+
+    <body>   
+
+    <!-- <div>
+        a<br>
+        <img src="./img/back_img01.jpg">
+    </div> -->
+
+    <div class="bg_img2">
+    </div>
+
+    </body>
+
+</html>
