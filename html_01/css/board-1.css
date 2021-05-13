@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+label.lay{
+    display: block;
+}
+select.board{
+    margin-left: 20px;
+}

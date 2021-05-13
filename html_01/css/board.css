@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* 초기화 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {
+    margin: 0; padding: 0;
+    font-family: "맑은 고딕", 돋음;
+    font-size: 14px;
+}
+
+/* 게시판 박스 */
+div#wrap {
+    width: 700px;
+    /* border: 1px solid black; */
+}
+
+/*******게시판 공통********/
+/* 폼 그룹 */
+div.form-group {
+    padding: 5px;
+}
+
+/* 폼 텍스트 */
+.form-txt {
+    display: inline-block;
+    width: 80px;
+}
+
+/************************/
+
+/* 게시판 선택 */
+#sel-brd {
+    width: 150px;
+}
+
+/* 제목 */
+input#txt-title {
+    width: 594px;
+}
+
+/* 비밀번호 */
+input#txt-pw {
+    width: 200px;
+}
+
+/* 공개범위, 허용범위 */
+input[type="radio"], [type="checkbox"] {
+    margin-right: 15px;
+}
+
+/* input[type="checkbox"] {
+    margin-right: 15px;
+} */
+
+/* 내용 */
+#txt-content {
+    width: 680px;
+    height: 300px;
+    resize: none;
+}
+
+/* 버튼 영역 */
+div.btn-area {
+    margin-top: 15px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #e6e6e6;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.btn-area .btn-shape {
+    width: 80px;
+    padding: 5px;
+    
+}

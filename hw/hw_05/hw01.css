@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* 전체 영역 */
+div.signup_area {
+    border-top: 1px solid rgb(223, 223, 223); 
+}
+/* 폼 그룹 */
+div.form_group {
+    padding: 10px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+/* 제목 */
+span {
+    display: inline-block;
+    width: 120px;
+}
+
+input[type="text"], [type="password"] {
+    padding: 3px;
+}
+
+/* 우편 주소 */
+button.btn_adress {
+    margin-left: 5px;
+}
+
+input.adress_dt{
+    margin-top: 5px;
+    margin-left: 126px;
+    display: block;
+}
+
+/* 통신사 */
+select.telecom {
+    width: 150px;
+    padding: 3px;
+}
+
+/* 자기소개 */
+span.propile {
+    float: left;
+}
+textarea.propile {
+    width: 500px;
+    height: 100px;
+    resize: none;
+}
+
+/* 버튼 그룹 */
+div.btn_group {
+    text-align: center;
+    margin-left: -200px;
+}

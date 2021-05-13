@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="./../../Template/reset.css"> <!--리셋 시트-->
+        <link rel="stylesheet" href="./hw01.css">
+    </head>
+        <body>
+            <form>
+                <!-- 전체 영역 -->
+                <div class="signup_area">
+                    <!-- 아이디 -->
+                    <div class="form_group">
+                        <label><span>아이디</span>
+                            <input type="text" name="uid" value="" placeholder="아이디를 입력하세요">
+                        </label>
+                    </div>
+                    <!-- //아이디 -->
+
+                    <!-- 패스워드 -->
+                    <div class="form_group">
+                        <label><span>패스워드</span>
+                            <input type="password" name="upw" value="" placeholder="패스워드를 입력하세요">
+                        </label>
+                    </div>
+                    <!-- // 패스워드-->
+
+                    <!-- 이름 -->
+                    <div class="form_group">
+                        <label><span>이름</span>
+                            <input type="text" name="uname" value="" placeholder="이름을 입력하세요">
+                        </label>
+                    </div>
+                    <!-- // 이름-->
+                    
+                    <!-- 프로필 사진 -->
+                    <div class="form_group">
+                        <label><span>프로필 사진</span>
+                            <input type="file" name="propile" value="">
+                        </label>
+                    </div>
+                    <!-- // 프로필 사진-->
+
+                    <!-- 주소 -->
+                    <div class="form_group">
+                        <label><span>주소</span>
+                            <input type="text" name="adress" value="" placeholder="우편번호">
+                        </label>
+                        <button class="btn_adress">우편번호 찾기</button>
+                        <input type="text" class="adress_dt" name="adress_dt" value="" placeholder="상세 주소">
+                    </div>
+                    <!-- // 주소-->
+                    
+                    <!-- 통신사 -->
+                    <div class="form_group">
+                        <label><span>이동통신사</span>
+                            <select name="telecom" class="telecom">
+                                <option value="" selected>선택하세요</option>
+                                <option value="skt">SKT</option>
+                                <option value="kt">KT</option>
+                                <option value="lg">LGU+</option>
+                            </select>
+                        </label>
+                    </div>
+                    <!-- // 통신사-->
+
+                    <!-- 나이 -->
+                    <div class="form_group">
+                        <span>나이</span>
+                        <label>10대
+                            <input type="radio" name="age" value="10s" checked>
+                        </label>
+                        <label>20대
+                            <input type="radio" name="age" value="20s">
+                        </label>
+                        <label>30대
+                            <input type="radio" name="age" value="30s">
+                        </label>
+                        <label>40대
+                            <input type="radio" name="age" value="40s">
+                        </label>
+                        <label>기타
+                            <input type="radio" name="age" value="etc">
+                        </label>
+                    </div>
+                    <!-- // 나이-->
+
+                    <!-- 취미 -->
+                    <div class="form_group">
+                        <span>취미</span>
+                        <label>독서
+                            <input type="checkbox" name="hobby" value="book">
+                        </label>
+                        <label>영화
+                            <input type="checkbox" name="hobby" value="movie">
+                        </label>
+                        <label>음악
+                            <input type="checkbox" name="hobby" value="music">
+                        </label>
+                        <label>여행
+                            <input type="checkbox" name="hobby" value="trip">
+                        </label>
+                        <label>코딩
+                            <input type="checkbox" name="hobby" value="coding">
+                        </label>
+                        <label>기타
+                            <input type="checkbox" name="hobby" value="etc">
+                        </label>
+                    </div>
+                    <!-- // 취미-->
+
+                    <!-- 자기소개 -->
+                    <div class="form_group">
+                        <label><span class="propile">자기소개</span>
+                            <textarea class="propile" name="propile_txt"></textarea>
+                        </label>
+                    </div>
+                    <!-- // 자기소개-->
+                    
+                    <!-- 버튼 -->
+                    <div class="form_group btn_group">
+                        <button value="submit">등록</button>
+                        <button value="reset">초기화</button>
+                    </div>
+                    <!-- // 버튼-->
+
+                </div>
+                <!-- // 전체 영역-->
+            </form>
+        </body>
+</html>
