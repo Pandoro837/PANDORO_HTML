@@ -43,3 +43,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* clearfix */
+.clearfix:before, .clearfix:after {
+    display: block; 
+    content:""; 
+    line-height: (0);
+}
+.clearfix:after {
+clear: both;
+}
