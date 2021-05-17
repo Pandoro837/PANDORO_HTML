@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="styleshseet" href="">
+        <style>
+            .clearfix {
+                *zoom:1;
+                border: 1px solid blue;
+            }
+	        .clearfix:before, .clearfix:after {
+                display: block; 
+                content:""; 
+                line-height: (0);
+            }
+	        .clearfix:after {
+            clear: both;
+            }
+
+            .float {
+                float: left;
+                border: 1px solid red;
+                width: 12%;
+                text-align: center;
+                display: inline-block;
+                position: relative;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="clearfix">
+            <div class="float">a</div>
+            <div class="float">a</div>
+            <div class="float">a</div>
+            <div class="float">a</div>
+            <div class="float">a</div>
+            <div class="float">a</div>
+            <div class="float">a</div>
+        </div>
+        <div>ㅏㅏㅏㅏ</div>
+    </body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="C:\JavaStudy\workspace_front\Template\reset.css">
+        <link rel="stylesheet" href="C:\JavaStudy\workspace_front\mysite()\assets\css\common.css">
+        <link rel="stylesheet" href="C:\JavaStudy\workspace_front\mysite()\assets\css\sign_up.css">
+    </head>
+
+    <body>
+        <div id="wrap"> 
+                <!--header-->
+            <div id="header" class="clearfix">
+                    <!-- logo -->
+                <h1><a href="C:\JavaStudy\workspace_front\mysite()\main\main.html">MySite</a></h1>
+                
+                    <!-- sign up -->
+                <ul class="clearfix">
+                    <li>
+                        <a href="">로그인</a>
+                    </li>
+                    <li>
+                        <a href="C:\JavaStudy\workspace_front\mysite()\user\sign_up.html">회원가입</a>
+                    </li>
+                </ul>
+                    <!-- //sing up -->
+
+            </div>
+                <!-- //header-->
+
+                <!-- gnb -->
+            <div id="nav">
+                <ul class="clearfix">
+                    <li>입사 지원서</li>
+                    <li>갤러리</li>
+                    <li><a href="C:\JavaStudy\workspace_front\mysite()\views\board\board.html">게시판</a></li>
+                    <li>방명록</li>
+                </ul>
+            </div>
+                <!-- //gnb -->
+
+                <!-- content -->
+            <div id="content" class="clearfix">
+
+                <!-- aside -->
+               <div id="aside">
+
+                    <h2>회원가입</h2>
+
+                    <ul>
+                        <li><a href="" target="_self">마이 페이지</a></li>
+                        <li><a href="" target="_self">유저 정보</a></li>
+                        <li><a href="" target="_self">회원가입</a></li>
+                    </ul>
+
+               </div>
+                <!-- //aside -->
+
+                <!-- main -->
+               <div id="main">
+                   <!-- main-header -->
+                   <div id="main-head" class="clearfix">
+                       <h3>
+                           회원가입
+                        </h3>
+                       
+                        <ul class="clearfix">
+                           <li>홈</li>
+                           <li>유저</li>
+                           <li>회원가입</li>
+                        </ul>
+                   </div>
+                   <!-- //main-header -->
+
+                   <!-- main-body -->
+                   <div id="main-body">
+
+                            <!-- board-signup -->
+
+                        <div id="board-signup">
+                        <form>
+                            <div>
+                                <label for="user-id">아이디</label>
+                                <input id="user-id" type="text" placeholder="아이디를 입력해주세요">
+                            </div>
+                            <div>
+                                <label for="user-pswrd">비밀번호</label>
+                                <input id="user-pswrd" type="password" placeholder="비밀번호를 입력해주세요">
+                            </div>
+                            <div>
+                                <label for="user-name">이름</label>
+                                <input id="user-name" type="text" placeholder="이름을 적어주세요">
+                            </div>
+                            
+                            <div>
+                                <label for="user-pic">프로필 사진</label>
+                                <input id="user-pic" type="file" name="propile" value="">
+                            </div>
+
+                            <div>
+                                <label for="adress">주소</label>
+                                <input id="adress" type="text" name="adress" value="" placeholder="우편번호">
+                                <button>우편번호 찾기</button>
+                                <input id="adress-dt" type="text" name="adress_dt" value="" placeholder="상세 주소">
+                            </div>
+
+                            <div>
+                                <label for="telecom">이동통신사</label>
+                                <select id="telecom" name="telecom" class="telecom">
+                                    <option value="" selected>선택하세요</option>
+                                    <option value="skt">SKT</option>
+                                    <option value="kt">KT</option>
+                                    <option value="lg">LGU+</option>
+                                </select>
+                            </div>
+                            
+                            <div id="age">
+                                <span>나이</span>
+                                <label>10대
+                                    <input type="radio" name="age" value="10s" checked>
+                                </label>
+                                <label>20대
+                                    <input type="radio" name="age" value="20s">
+                                </label>
+                                <label>30대
+                                    <input type="radio" name="age" value="30s">
+                                </label>
+                                <label>40대
+                                    <input type="radio" name="age" value="40s">
+                                </label>
+                                <label>기타
+                                    <input type="radio" name="age" value="etc">
+                                </label>
+                            </div>
+
+                            <div id="hobby">
+                                <span>취미</span>
+                                <label>독서
+                                    <input type="checkbox" name="hobby" value="book">
+                                </label>
+                                <label>영화
+                                    <input type="checkbox" name="hobby" value="movie">
+                                </label>
+                                <label>음악
+                                    <input type="checkbox" name="hobby" value="music">
+                                </label>
+                                <label>여행
+                                    <input type="checkbox" name="hobby" value="trip">
+                                </label>
+                                <label>코딩
+                                    <input type="checkbox" name="hobby" value="coding">
+                                </label>
+                                <label>기타
+                                    <input type="checkbox" name="hobby" value="etc">
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="box-write">자기소개</label>
+                                <textarea id="box-write" placeholder=""></textarea>
+                            </div>
+                        </div>
+
+                            <!-- //board-write -->
+
+                            <!-- btn-group -->
+
+                        <div id="btn-group">
+                            <button type="submit">저장</button>
+                            <button type="reset">취소</button>
+                        </div>
+
+                            <!-- //btn-group -->
+                        </form>
+                    </div>    
+                   <!-- //main-body -->
+              
+                </div> 
+
+                <!--// main -->
+
+            </div>
+                <!-- //content -->
+
+                <!-- footer -->
+            <div id="footer">
+                <span>
+                    Copyright © 2021 Choi. All right reserved
+                </span>
+            </div>
+                <!-- //footer -->
+        </div>
+
+    </body>
+</html>

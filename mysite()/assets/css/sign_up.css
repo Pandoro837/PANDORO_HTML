@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/* board-signup */
+
+#board-signup {
+    margin-bottom: 15px;
+}
+
+#board-signup>form>div>label, #board-signup>form div span {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+#board-signup>form>div>#adress-dt {
+    display: block;
+    margin-left: 103px;
+    margin-bottom: 10px;
+}
+
+#board-signup select {
+    width: 150px;
+    padding: 3px;
+}
+
+#board-signup>form>div#age label, #board-signup>form>div#hobby label {
+    width: auto;
+}
+
+
+
+#board-signup input[type="text"], input[type="password"] {
+    width: 200px;
+    padding: 3px;
+    
+}
+
+#box-write {
+    width: 500px;
+    height: 200px;
+    resize: none;
+}
+
+/* //board-write */
+
+/* btn-group */
+
+div#btn-group {
+    margin-left: -70px;
+    text-align: center;
+
+}

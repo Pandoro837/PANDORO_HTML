@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* #board {
+    background-color: tomato;
+    text-align: right;
+} */
+
+/* search-bar */
+
+#board form {
+    float: right;
+}
+
+#board #search-bar {
+    margin-bottom: 15px;
+}
+
+#board form input[type="text"] {
+    width: 150px;
+    height: 20px;
+}
+
+#board form button {
+    height: 30px;
+    padding: 3px 5px 3px 5px;
+    
+}
+
+/* //search-bar */
+
+/* table - 공용 사용 시, common으로 */
+#table {
+    margin-bottom: 30px;
+}
+#table table {
+    width: 800px;
+    border: 2px solid #b6b6b6;
+    border-collapse: collapse;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+
+#table table thead {
+    background-color: #dddddd;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#table table tr {
+    height: 40px;
+    border-top: 2px dotted #b6b6b6;
+}
+
+#table table td, th {
+    vertical-align: middle;
+}
+
+#table table td>button {
+    background: none;
+    border: none;
+}
+
+#table table th:first-child, th:last-child {
+    width: 8%;
+}
+
+#table table th:nth-child(2) {
+    width: 40%;
+}
+
+/* //table */
+
+/* board-ctrl */
+
+#board-ctrl {
+    text-align: center;
+    
+}
+
+/* paging */
+
+#board-ctrl ol {
+    /* width: 500px;
+    margin: auto; */
+    display: inline-block;
+    margin-left: 60px;
+}
+
+#board-ctrl ol>li {
+    float: left;
+    padding: 0px 10px;
+}
+
+#board-ctrl ol>li a.active {
+    font-size: 15px;
+    font-weight: bold;
+    color: blue;
+}
+ 
+/* //paging */
+
+#btn-write {
+    float: right;
+    margin-top: -5px;
+    margin-right: 15px;
+    padding: 5px 6px;
+    background: #e6e6e6;
+    border: 1px solid #8d8d8d;
+    border-radius: 3px;
+}

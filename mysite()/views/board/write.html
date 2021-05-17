@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="C:\JavaStudy\workspace_front\Template\reset.css">
+        <link rel="stylesheet" href="C:\JavaStudy\workspace_front\mysite()\assets\css\common.css">
+        <link rel="stylesheet" href="C:\JavaStudy\workspace_front\mysite()\assets\css\write.css">
+    </head>
+
+    <body>
+        <div id="wrap"> 
+                <!--header-->
+            <div id="header" class="clearfix">
+                    <!-- logo -->
+                <h1><a href="C:\JavaStudy\workspace_front\mysite()\main\main.html">MySite</a></h1>
+                
+                    <!-- sign up -->
+                <ul class="clearfix">
+                    <li>
+                        <a href="">로그인</a>
+                    </li>
+                    <li>
+                        <a href=C:\JavaStudy\workspace_front\mysite()\user\sign_up.html>회원가입</a>
+                    </li>
+                </ul>
+                    <!-- //sing up -->
+
+            </div>
+                <!-- //header-->
+
+                <!-- gnb -->
+            <div id="nav">
+                <ul class="clearfix">
+                    <li>입사 지원서</li>
+                    <li>갤러리</li>
+                    <li><a href="C:\JavaStudy\workspace_front\mysite()\views\board\board.html">게시판</a></li>
+                    <li>방명록</li>
+                </ul>
+            </div>
+                <!-- //gnb -->
+
+                <!-- content -->
+            <div id="content" class="clearfix">
+
+                <!-- aside -->
+               <div id="aside">
+
+                    <h2>게시판</h2>
+
+                    <ul>
+                        <li><a href="C:\JavaStudy\workspace_front\mysite()\views\board\board.html" target="_self">일반 게시판</a></li>
+                        <li><a href="" target="_self">댓글 게시판</a></li>
+                        <li><a href="" target="_self">첨부 게시판</a></li>
+                    </ul>
+
+               </div>
+                <!-- //aside -->
+
+                <!-- main -->
+               <div id="main">
+                   <!-- main-header -->
+                   <div id="main-head" class="clearfix">
+                       <h3>
+                           게시글 작성
+                        </h3>
+                       
+                        <ul class="clearfix">
+                           <li>홈</li>
+                           <li>게시판</li>
+                           <li>일반 게시판</li>
+                        </ul>
+                   </div>
+                   <!-- //main-header -->
+
+                   <!-- main-body -->
+                   <div id="main-body">
+                        <form>
+                            <!-- board-write -->
+
+                            <div id="board-write">
+                                <div>
+                                    <label for="sel-brd">게시판 선택</label>
+                                    <select id=sel-brd name="board">
+                                        <option value="" selected>선택해주세요</option>
+                                        <option value="">일반 게시판</option>
+                                        <option value="">댓글 게시판</option>
+                                        <option value="">첨부 게시판</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="txt-title">제목</label>
+                                    <input id="txt-title" type="text" placeholder="제목을 입력해주세요">
+                                </div>
+                                <div>
+                                    <label for="txt-name">이름</label>
+                                    <input id="txt-name" type="text" placeholder="이름을 적어주세요">
+                                </div>
+                                <div>
+                                    <label for="txt-pswrd">비밀번호</label>
+                                    <input id="txt-pswrd" type="password" placeholder="비밀번호를 입력해주세요">
+                                </div>
+
+                                <div id="scope">
+                                    <span>공개범위</span>
+                                    <label for="scp_own">본인</label>
+                                    <input id="scp_own" type="radio" name="scope" value="own">
+                
+                                    <label for="scp_login">로그인 회원</label>
+                                    <input id="scp_login" type="radio" name="scope" value="login">
+                                    
+                                    <label for="scp_friend">친구</label>
+                                    <input id="scp_friend" type="radio" name="scope" value="friend">
+                                    
+                                    <label for="scp_all">전체</label>
+                                    <input id="scp_all" type="radio" name="scope" value="all" checked>
+                                </div>
+
+                                <div id="allow">
+                                    <span>허용범위</span>
+                                    <label>댓글 허용</label>
+                                    <input type="checkbox" name="permission" value="coment" checked>
+                                    <label>답글 허용</label>
+                                    <input type="checkbox" name="permission" value="answer">
+                                    <label>좋아요 허용</label>
+                                    <input type="checkbox" name="permission" value="like">
+                                </div>
+
+                                <div>
+                                    <label for="box-write">내용</label>
+                                    <textarea id="box-write" placeholder=""></textarea>
+                                </div>
+                            </div>
+
+                                <!-- //board-write -->
+
+                                <!-- btn-group -->
+
+                            <div id="btn-group">
+                                <button type="submit">저장</button>
+                                <button type="reset">취소</button>
+                            </div>
+                            
+                            <!-- //btn-group -->
+
+                        </form>
+
+                    </div>    
+                   <!-- //main-body -->
+              
+                </div> 
+
+                <!--// main -->
+
+            </div>
+                <!-- //content -->
+
+                <!-- footer -->
+            <div id="footer">
+                <span>
+                    Copyright © 2021 Choi. All right reserved
+                </span>
+            </div>
+                <!-- //footer -->
+        </div>
+
+    </body>
+</html>

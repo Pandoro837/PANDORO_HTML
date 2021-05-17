@@ -3,28 +3,31 @@
 /* test */
 body {
     background-color: burlywood;
+    
 }
 
+/* header */
 div.header_bg {
     background-color: rgb(80, 80, 80);
     width: 100%px;
     height: 350px;
+    text-align: center;
 }
 
 div.header {
     background-color: rgba(0, 0, 0, 0.466);
     width: 100%;
     height: 150px;
-    text-align: center;
+    
     color: white;
     margin: auto;
 }
-
+/* logo */
 img.logo {
     margin-top: 25px;
     margin-bottom: 15px;
 }
-
+/* menu */
 div.header ul{
     display: table;
     display: inline-block;
@@ -39,6 +42,8 @@ div.header ul>li {
     display: table-cell;
     
 }
+
+/* search */
 input[type="text"].search {
     width: 120px;
     margin-top: -10px;
@@ -59,3 +64,5 @@ input[type="button"].search {
     background: none;
     margin-left: -25px;
 }
+
+/* //header */

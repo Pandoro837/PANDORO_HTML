@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+body {font-family: "맑은 고딕", 돋음; font-size: 12px;}
+
+/* layout */
+
+#wrap {width: 1000px; margin: 0px auto;}
+#header {
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #bfbfbf;
+}
+#nav {
+    padding: 10px 0px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+#content {
+    padding: 15px 0px;
+}
+
+#footer {
+    background-color: #dddddd;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* header */
+#header h1>a {
+    float: left;
+    font-size: 35px; 
+    color: #79b30b;
+}
+
+/* signup */
+#header ul {
+    float: right ;
+    margin-top: 10px;
+}
+
+#header ul>li {
+    float: left;
+    margin: 0px 0px 0px 10px;
+    padding: 4px;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    background-color: #efefef;
+}
+
+/* gnb */
+
+/* nav */
+
+#nav ul>li {
+    float: left;
+    width: 249px;
+    border-right: 1px solid #bfbfbf;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#nav ul>li:last-child {
+    border-right: none;
+}
+
+/* content */
+
+/* aside-main content */
+
+/* aside */
+
+#content #aside {
+    float: left;
+    width: 180px;
+    margin-right: 20px;
+}
+
+#content #aside h2 {
+    padding: 20px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #dddddd;
+    
+}
+
+#content #aside ul>li {
+    border: 1px solid #bfbfbf;
+    margin-top: 5px;
+    padding: 5px 0px 5px 7px;
+    font-size: 15px;
+
+}
+/* //aside */
+
+/* main */
+
+/* main-head */
+
+#content #main {
+
+    float: left;
+    width: 800px;
+    margin-bottom: 20px;
+}
+
+#content #main #main-head{
+    padding-top: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+#content #main #main-head h3 {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main #main-head ul {
+    float: right;
+    margin-top: 6px;
+}
+
+#main #main-head ul>li {
+    float: left;
+    font-size: 15px;
+}
+
+#main #main-head ul>li:after {
+    content: ">";
+}
+#main #main-head ul>li:last-child:after {
+    content: none;
+}
+
+/* //main-head */
+
+/* main-body */
+
+a:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
