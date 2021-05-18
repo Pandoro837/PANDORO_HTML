@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+#gallery-board {
+    background-color: cornflowerblue;
+    width: 800px;
+    padding-top: 25px;
+}
+
+#gallery-board>#gallery-row {
+    background-color: tomato;
+    width: 800px;
+    height: 250px;
+    margin-bottom: 15px;
+    
+}
+
+#gallery-board>#gallery-row>.gallery-pic {
+    float: left;
+    background-color: teal;
+    width: 250px;
+    height: 250px;
+}
+
+#gallery-board>#gallery-row>.gallery-pic:first-child {
+    margin-left: 10px;
+}
+
+#gallery-board>#gallery-row>.gallery-pic:nth-child(2) {
+    margin: 0 15px;
+}
+
+#gallery-board>#gallery-row>.gallery-pic:last-child {
+    margin-right: 10px;
+}

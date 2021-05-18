@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* aside가 없을 때, main 위치 조절 */
+
+#content #main #main-head {
+    margin-left: 200px;
+    width: 800px;
+}
+
+/* aside가 없을 때, main 위치 조절 */
+
+/* board-login */
+
+#board-login>form {
+    text-align: center;
+    margin-left: 200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* login-input */
+
+#board-login>form>input {
+    width: 400px;
+    height: 40px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* login-button */
+
+#board-login>form>button {
+    font-size: 15px;
+    width: 410px;
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    
+}
+
+/* login-option */
+
+div#login-option {
+    width: 400px;
+    margin: auto;
+    padding-top: 15px;
+    border-top: 1px solid #bfbfbf;
+}
+
+div#login-option>label {
+    float: left;
+}
+
+div#login-option>span {
+    float: right;
+}

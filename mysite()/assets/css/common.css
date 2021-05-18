@@ -146,3 +146,42 @@ button:hover {
     cursor: pointer;
 }
 
+/* board-paging, btn-write */
+
+/* paging */
+
+#board-ctrl ol {
+    /* width: 500px;
+    margin: auto; */
+    display: inline-block;
+    margin-left: 60px;
+}
+
+#board-ctrl ol>li {
+    float: left;
+    padding: 0px 10px;
+}
+
+#board-ctrl ol>li a.active {
+    font-size: 15px;
+    font-weight: bold;
+    color: blue;
+}
+ 
+/* //paging */
+
+/* btn-write */
+
+#btn-write {
+    float: right;
+    margin-top: -5px;
+    margin-right: 15px;
+    padding: 5px 6px;
+    background: #e6e6e6;
+    border: 1px solid #8d8d8d;
+    border-radius: 3px;
+}
+
+/* //btn-write */
+
+/* //board-paging, btn-write */
